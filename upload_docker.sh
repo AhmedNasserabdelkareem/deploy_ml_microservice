@@ -5,11 +5,14 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+dockerpath="nassercsed/deploy_ml"
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker login --username=nassercsed
+docker tag deploy_ml nassercsed/deploy_ml
 
 # Step 3:
 # Push image to a docker repository
+docker image push nassercsed/deploy_ml
