@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/AhmedNasserabdelkareem/deploy_ml_microservice.svg?style=svg)](https://circleci.com/gh/AhmedNasserabdelkareem/deploy_ml_microservice)
 
 ## Project Overview
 
@@ -40,3 +40,17 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+### Description
+* `.circleci` - circleci configration
+* `model_data` - data 
+* `output_txt_files` - project output files (docker, kubernetes)
+    * `docker_out.txt` - run_docker.sh output
+    * `kubernetes_out.txt` - run_kubernetes.sh output
+* `app.py` - python web app
+* `Dickerfile` - docker image configration file
+* `make_prediction.sh` - make predictions
+* `Makefile` - make file for stages:install,test,lint steps
+* `requirements.txt` - dependencies and libraries
+* `run_docker.sh` - run docker container
+* `run_kubernetes.sh` - start kubernetes pod
+* `upload_docker.sh` - upload the docker image to dockerhub
