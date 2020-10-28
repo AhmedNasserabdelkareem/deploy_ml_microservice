@@ -7,8 +7,7 @@ COPY . /app
 # Copy source code to working directory
 
 ## Step 3:
-RUN pip install --upgrade pip && \
-	pip install -r requirements.txt
+RUN pip install -r requirements.txt
 #hadolint ignore=DL3013
 
 ## Step 4:
